@@ -484,6 +484,10 @@ footer p:nth-child(2) {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    height: auto;
+  }
+  .a-social-icons {
+    display: none;
   }
   .navigation {
     display: none;
@@ -509,10 +513,6 @@ footer p:nth-child(2) {
     color: #111;
     font-size: 1.4em;
   }
-  .toggle::before {
-    content: url(../imgs/menu.png);
-    z-index: 1;
-  }
   .menuToggle {
     position: relative;
     width: 40px;
@@ -523,6 +523,7 @@ footer p:nth-child(2) {
     background-position: center;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 1000;
   }
   .menuToggle.active {
     transform: rotateZ(-90deg);
