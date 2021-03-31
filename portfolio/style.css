@@ -478,13 +478,16 @@ footer p:nth-child(2) {
     line-height: 50px;
     margin: 0px;
     padding: 0px;
+    font-size: 3em;
   }
   .text-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: auto;
+    height: 95vh;
   }
   .a-social-icons {
     display: none;
@@ -533,6 +536,7 @@ footer p:nth-child(2) {
     background-position: center;
   }
   .about-container {
+    margin-top: 40px;
     top: 0px;
     flex-direction: column;
     width: 90%;
