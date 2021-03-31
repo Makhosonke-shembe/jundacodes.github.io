@@ -1,93 +1,130 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/app.js"></script>
-    <script src="scripts/all.js"></script>
-    <title>Junda Codes</title>
-</head>
-<body>
-    <section>
-        <nav>
-            
-            <a href="#" class="logo"><div class="nav-logo"></div> City<span>Tech</span></a>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#" class="btn-login">Login</a></li>
-            </ul>
-        </nav>
-        <div class="text-container">
-            <div class="design-logo"></div>
-            <p>Hello, and Welcome</p>
-            <p>I<span>'</span>m <span>Siprian</span></p>
-            <p><span>Web</span> Developer / UI Designer</p>
-            <button class="btn-hire-me">Hire me</button>
-            <button class="btn-my-work">My work</button>
-        </div>
-    </section>
-    <div class="services">
-        <div class="services-title-container">
-            <p>Service Packages</p>
-            <p>We offer our clients unique and high quality business solutions at a minimum cost possible.</p>
-            <div class="packages">
-                <div class="package-1">
-                    <div class="package-image-1">
-                    </div>
-                    <p>King hosting</p>
-                    <p>Offering the best and high quality hosting from as little as R99.00 pm. Our hosting servers are super outstanding and powerfull.</p>
-                </div>
-                <div class="package-2">
-                    <div class="package-image-2"></div>
-                    <p>Connectivity</p>
-                    <p>Always ready to connect your business with potential clients.
-                        we have unlimited customer services ready to help you.
-                    </p>
-                </div>
-                <div class="package-3">
-                    <div class="package-image-3">
-                    </div>
-                    <p>UI / UX Design</p>
-                    <p>Providing the best user interface and user experience possible. this is very important for the users of your website.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="long-way">
-        <div class="text-cont">
-            <p>TAKE YOUR BUSINESS TO A <span>NEW LEVEL</span> TODAY!</p>
-            <button class="btn-start-now">START NOW</button>
-        </div>
-    </div>
-    <div class="contacts">
-        <div class="contact-title">
-            <p>Get in touch</p>
-            <p>We offer our clients unique and high quality business solutions at a minimum cost possible.</p>
-        </div>
-        <div class="contact-form">
-            <div class="cf-line-1">
-                <p>Feel free to give us a call</p>
-                <div class="details-inputs">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="email">
-                </div>
-            </div>
-            <div class="cf-line-2">
-                <div class="cf-box-1">
-                    <div class="text-icon-"><i></i><p><span>Phone:</span>(+27) 67 883 0055</p></div>
-                    <div class="text-icon"><i></i><p><span>email:</span>(+27) 67 883 0055</p></div>
-                    <div class="text-icon"><i></i><p><span>Address:</span>(+27) 67 883 0055</p></div>
-                </div>
-                <textarea name="message" id="" cols="30" rows="6" placeholder="Messsage here..."></textarea>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
+<!--doctype html-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link type="text/css" href='style.css' rel='stylesheet'>	
+
+        <script defer src="all.js"></script>
+    </head>
+    <body>
         
-    </div>
-</body>
+        <section>
+            <!--navigation-->
+            <nav>
+                <a href="#" class="logo">Junda<span>Codes</span></a>
+                <div class="menuToggle" onclick="toggleMenu();"> </div>
+                <ul class="navigation">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <!--introduction text-->
+            <div class="text-container">
+                <p>Hello,</p>
+                <p>I'm Siprian<span>|</span>Junda</p>
+                <p>I develop <strong>mobile apps</strong><br>& <strong>websites</strong></p>
+                <button class="hire-btn">Hire me</button>
+                <button class="down-cv">Download CV</button>
+            </div>
+
+            <!--model picture-->
+            <img src="imgs/model.png" class="model" alt="model" />
+
+
+        </section>
+        <!--about container-->
+        <div id="about" class="about-container">
+            
+            <img src="imgs/about-img.png" alt="about image">
+            <div class="about-text">
+                <p>Makhosonke Khumalo</p>
+                <p>Developer & Designer</p>
+                <p>I develop mobile apps and websites for business and individuals, 
+                    I design mobile and web UI if you need any of that I'm your guy. 
+                    I am really fast and professional so make sure to 
+                    contact if you need help as soon as possible.
+                </p>
+                
+                <button>Hire me</button>
+                <button>Download CV</button>
+            </div>
+        </div>
+
+        <div id="services" class="services">
+            <div class="services-text">
+                <p>Services</p>
+                <p>Services I offer</p>
+                <p>I develop mobile apps and websites for business and individuals, 
+                    I design mobile and web UI if you need any of that I'm your guy. 
+                    I am really fast and professional so make sure to 
+                    contact if you need help as soon as possible.</p>
+            </div>
+
+            <div class="box-container">
+                <div class="box-1">
+                    <span>1</span>
+                    <p class="heading">Web design</p>
+                    <p class="details">I design mobile and web UI if you need any of that I'm your guy. 
+                        I am really fast and professional so make sure to 
+                        contact if you need help as soon as possible.</p>
+                    <button>Read more</button>
+                </div>
+                <div class="box-2">
+                    <span>2</span>
+                    <p class="heading">Mobile UI design</p>
+                    <p class="details">I design mobile and web UI if you need any of that I'm your guy. 
+                        I am really fast and professional so make sure to 
+                        contact if you need help as soon as possible.</p>
+                    <button>Read more</button>
+                </div>
+                <div class="box-3">
+                    <span>3</span>
+                    <p class="heading">Graphic design</p>
+                    <p class="details">I design mobile and web UI if you need any of that I'm your guy. 
+                        I am really fast and professional so make sure to 
+                        contact if you need help as soon as possible.</p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-me">
+            <p>Do you have an idea you want to execute? </p>
+            <button>Contact me</button>
+        </div>
+        <footer>
+            <p>Junda Codes</p>
+            <p>We make sure you get the best of the best while you save money. Join us in the journey of making South africa great,
+                 donate to help our business grow bigger and faster.</p>
+                 <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                 </div>
+
+                 <p>&copy; Copyrights by <|J|> Codes </p>
+        </footer>
+        <div class="a-social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+         <script>
+             function toggleMenu(){
+                const menuToggle = document.querySelector(".menuToggle");
+                const navigation = document.querySelector(".navigation");
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active')
+             }
+         </script>
+    </body>
 </html>
