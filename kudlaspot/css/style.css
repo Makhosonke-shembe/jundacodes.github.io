@@ -9,14 +9,62 @@ p {
   font-weight: 300;
   color: #111;
 }
+.popupyam .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.09);
+  z-index: 1;
+}
+.popupyam .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+}
+.banner_dev {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: url(../images/DSC_8031a.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+.banner_dev .content {
+  max-width: 900px;
+  text-align: center;
+}
+.banner_dev .content h2 {
+  font-size: 5em;
+  color: #ffffff;
+}
+.banner_dev .content p {
+  font-size: 1em;
+  color: #ffffff;
+}
+.banner_dev .content .ht_o {
+  color: #ff0157;
+  font-weight: bold;
+  font-size: 5.5em;
+}
 .banner {
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  background: url(../images/bg.jpg);
+  background: url(../images/DSC_8031a.jpg);
   background-size: cover;
   background-position: center;
   transition: 0.5s;
@@ -120,6 +168,18 @@ header.sticky .navigation li a:hover {
 section {
   padding: 100px;
 }
+.banner .content .home_title {
+  color: #ff0157;
+}
+.banner .content .ht_o {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 5.5em;
+}
+.banner .content .sub_title {
+  color: #ffffff;
+  font-weight: 300;
+}
 .row {
   position: relative;
   display: flex;
@@ -162,35 +222,39 @@ section {
   align-items: center;
   flex-direction: column;
 }
+
 .menu {
-  background: #1f232e;
+  background: url(../images/900.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.menu .content {
+.menu .menu_overlay .content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.menu .content .box {
+.menu .menu_overlay .content .box {
+  border-radius: 5px;
   width: 340px;
   margin: 20px;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.137);
   padding: 20px;
   background-color: #ffffff;
 }
-.menu .content .box:hover {
+.menu .menu_overlay .content .box:hover {
   transform: scale(1.05);
   transition: 0.5s;
   z-index: 101;
 }
 
-.menu .content .box .imgBx {
+.menu .menu_overlay .content .box .imgBx {
   position: relative;
   width: 100%;
   height: 300px;
 }
-.menu .content .box .imgBx img {
+.menu .menu_overlay .content .box .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -199,25 +263,25 @@ section {
   object-fit: cover;
   border-radius: 5px;
 }
-.menu .content .box .text {
+.menu .menu_overlay .content .box .text {
   color: #ffffff;
   padding: 15px 0 5px;
   display: flex;
   justify-content: space-between;
 }
 
-.menu .content .box .text h3 {
+.menu .menu_overlay .content .box .text h3 {
   font-weight: 400;
   color: #111;
 }
-.menu .content .box .text h2 {
+.menu .menu_overlay .content .box .text h2 {
   font-weight: bold;
   color: #ff0157;
 }
-.menu .title .title-text {
+.menu .menu_overlay .title .title-text {
   color: #ffffff;
 }
-.menu .title p {
+.menu .menu_overlay .title p {
   color: #ffffff;
 }
 .experts .content {
@@ -231,7 +295,7 @@ section {
   width: 250px;
   margin: 15px;
   border: 15px solid #ffffff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.185);
   border-radius: 5px;
 }
 .experts .content .box .imgBx {
@@ -256,7 +320,7 @@ section {
   color: #111;
 }
 .testimonials {
-  background: url(../images/bg.jpg);
+  background: url(../images/smartmockups_kso9k1km.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -323,7 +387,7 @@ section {
 .contactForm {
   padding: 75px 50px;
   background: #ffffff;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.411);
   max-width: 500px;
   margin-top: 50px;
   transform: rotateZ(-3deg);
@@ -371,6 +435,10 @@ section {
 
 .footer {
   background-color: #1f232e;
+}
+
+.footer p {
+  text-align: center;
 }
 
 .center-btn {
@@ -481,9 +549,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/bg.jpg);
+    background: url(../images/DSC_8031a.jpg);
     background-size: cover;
     background-position-x: center;
+  }
+  .banner .content {
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(82, 85, 116, 0.103);
   }
   .banner .content h2 {
     font-size: 3em;
@@ -524,5 +597,11 @@ section {
   }
   .portfolio-btn img {
     display: none;
+  }
+  .banner .content .ht_o {
+    font-size: 3.5em;
+  }
+  .banner .content .home_title {
+    font-size: 2.3em;
   }
 }
